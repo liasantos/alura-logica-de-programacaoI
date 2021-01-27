@@ -1,0 +1,39 @@
+    <meta charset="UTF-8" />
+
+<script>
+  /* funções */
+  //funções são declaradas primeiro
+  //sempre usar verbos nas funções
+  //quando declaramos uma função todas as instruções dentro dela ficam guardadas e não são executadas
+  //funções são mais do que um conjunto de instruções que podemos chamar a qualquer momento, elas permitem melhorar a legibilidade do código escondendo sua complexidade.
+
+  function pulaLinha() {
+    document.write("<br/><br/>");
+  }
+  function mostra(idade) {
+    //define o parâmetro que vai receber o valor de cada "mostra"
+    document.write(idade);
+    pulaLinha(); //uma função pode chamar outra função
+  }
+
+  //var puloLinha = "<br/><br/><br/>";
+  //document.write("Flávio tem " + (ano - 1977) + " anos"); //não é prático, pode virar função
+  //document.write(puloLinha); //legibilidade é ruim e não é prático
+
+  var ano = 2020;
+  mostra("Flávio tem " + (ano - 1977) + " anos"); //chama a função e recebe parâmetro
+  //pulaLinha(); //chama a função - mais legível e prático
+
+  //document.write("Joaquim tem " + (ano - 1996) + " anos");
+  //document.write(puloLinha);
+
+  mostra("Joaquim tem " + (ano - 1996) + " anos");
+  //pulaLinha();
+
+  //document.write("Barney tem " + (ano - 1976) + " anos");
+  ano = 2021;
+  mostra("Barney tem " + (ano - 1976) + " anos");
+  //pulaLinha();
+
+  mostra("Olá pessoal");
+</script>

@@ -1,0 +1,40 @@
+<!--resolve o problema de acentuação-->
+<meta charset="UTF-8" />
+
+<!--define o mundo JavaScript-->
+<script>
+  /*document.write("A idade do Flávio é <br> 18"); //escrever html
+  alert("A idade do Flávio é"); //alerta popup
+  document.write("A idade do Flávio é ");
+  document.write(18 + 20); //sem aspas considera como numero; posso fazer operações
+  document.write("18" + 20); //converte 20 em string e concatena
+  document.write("18" + "20"); //concatena*/
+  /*document.write("A média das idades é ");
+  document.write((20+10+30)/3); //analisa primeiro o que está em parênteses
+  document.write("Flavio na nasceu em " + (2016 - 39)); //isola a op. matemática para depois concatenar com a string*/
+
+  /*Variáveis*/ //começam com letra minuscula e cada palavra após com letra maiúscula
+  /*var ano = 2022; //var declara a variavél e = recebe valor
+  document.write("Flávio tem " + (ano - 1977) + " anos <br/>");
+  ano = 2021; //var só é usado na primeira vez
+  document.write("Flávio na verdade tem " + (ano - 1977) + " anos"); // var com valor reatribuído*/
+
+  /*Média das idades*/
+  //document.write("A média das idades é " + (39 + 20 + 41)/3); // não é prático
+  // var media = (39 + 20 + 41)/3; // as variáveis estão obscuras para o leitor
+  var idadeFlavio = 39;
+  var idadeJoaquim = 20;
+  var idadeBarney = 41;
+
+  var media = (idadeFlavio + idadeJoaquim + idadeBarney) / 3; //melhora a legibilidade do código
+
+  document.write("A média das idades é " + media); //mais legível
+  document.write("<br/>");
+  document.write("A média das idades é " + Math.round(media)); //Math.round() para arredondar
+  document.write("<br/>");
+
+  var nome = "Flávio";
+
+  document.write("A idade de  " + nome + " é " + idadeFlavio);
+</script>
+<!--string = texto-->
